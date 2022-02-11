@@ -17,10 +17,11 @@ The main driver for our code. This will handle user input and updating the graph
 '''
 def main():
     global human_turn
-    player_one, player_two = player()
+    player_one, player_two = True, False
     while True:
         if player_one == False or player_two == False:
-            ChessAI.depth_game = input('Choose a depth for AI (max 3): ')
+            # ChessAI.depth_game = input('Choose a depth for AI (max 3): ')
+            ChessAI.depth_game = 1
             try:
                 ChessAI.depth_game = int(ChessAI.depth_game)
                 if ChessAI.depth_game <= 3:
@@ -148,13 +149,14 @@ Ask to user how many player and side
 def player():
     while True:
         # player = input('How many player ? (0, 1, 2): ')
-        player = 0
+        player = 1
         if player == '0':
             player_one = False  # white player, set False for AI, True for human
             player_two = False  # black player, set False for AI, True for human
             break
         elif player == '1':
-            side = input('Choose your side (w, b): ')
+            # side = input('Choose your side (w, b): ')
+            side = 'w'
             if side == 'w':
                 player_one = True
                 player_two = False
