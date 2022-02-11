@@ -1,6 +1,7 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+import streamlit as st
 
 from chessgame import ChessMain
+
+'# Heading'
 
 ChessMain.main()
