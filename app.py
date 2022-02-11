@@ -4,4 +4,4 @@ from chessgame import ChessMain
 
 '# Heading'
 
-ChessMain.main()
+st.video(ChessMain.main())
