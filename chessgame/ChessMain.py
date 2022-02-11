@@ -147,7 +147,8 @@ Ask to user how many player and side
 '''
 def player():
     while True:
-        player = input('How many player ? (0, 1, 2): ')
+        # player = input('How many player ? (0, 1, 2): ')
+        player = 0
         if player == '0':
             player_one = False  # white player, set False for AI, True for human
             player_two = False  # black player, set False for AI, True for human
